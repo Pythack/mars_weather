@@ -20,7 +20,7 @@ div {
   width: 10%;
   height: 25%;
   color: white;
-  font-size: 20;
+  font-size: 100%;
   /*padding-top: 1px;*/
   text-align: center;
 }
