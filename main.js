@@ -35,7 +35,7 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
 if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
     try {
-        var data_iss = JSON.parse(xmlhttp.responseText);
+        var data_info = JSON.parse(xmlhttp.responseText);
     } catch(err) {
         console.warn(err.message + " in " + xmlhttp.responseText);
         return;
@@ -48,7 +48,6 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 }
 
-infos_get('https://api.nasa.gov/insight_weather/?api_key=UWtB23fwdeREqFp4mpbpd7quIuO8KXzRvaeclwRT&feedtype=json&ver=1.0', function(data, response) {
+infos_get('https://api.nasa.gov/insight_weather/?api_key=UWtB23fwdeREqFp4mpbpd7quIuO8KXzRvaeclwRT&feedtype=json&ver=1.0', function(data) {
     console.log(data);
-
   });
