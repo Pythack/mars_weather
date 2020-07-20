@@ -52,5 +52,11 @@ xmlhttp.send();
 }
 
 infos_get('https://api.nasa.gov/insight_weather/?api_key=UWtB23fwdeREqFp4mpbpd7quIuO8KXzRvaeclwRT&feedtype=json&ver=1.0', function(data) {
-    console.log(data);
+    var actual_sol = data[0]
+    console.log(actual_sol);
+    var actual_sol_AT = actual_sol['AT'];
+    var max_temp = actual_sol_AT['mx'];
+    var min_temp = actual_sol_AT['mn'];
+    document.getElementById('max').innerHTML = max_temp;
+    document.getElementById('min').innerHTML = min_temp;
   });
