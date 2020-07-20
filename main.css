@@ -11,3 +11,9 @@ body {
         -ms-user-select: none;
             user-select: none;
 }
+
+div {
+  border-radius: 10px;
+  background-color: black;
+  opacity: 75%;
+}
