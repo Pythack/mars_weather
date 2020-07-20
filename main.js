@@ -59,4 +59,11 @@ infos_get('https://api.nasa.gov/insight_weather/?api_key=UWtB23fwdeREqFp4mpbpd7q
     var min_temp = actual_sol_AT['mn'];
     document.getElementById('max').innerHTML = max_temp + "°C";
     document.getElementById('min').innerHTML = min_temp + "°C";
+    var actual_sol = Object.keys(data)[1];
+    var actual_sol = data[actual_sol];
+    var actual_sol_AT = actual_sol['AT'];
+    var max_temp = actual_sol_AT['mx'];
+    var min_temp = actual_sol_AT['mn'];
+    document.getElementById('max-1').innerHTML = max_temp + "°C";
+    document.getElementById('min-1').innerHTML = min_temp + "°C";
   });
