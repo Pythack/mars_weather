@@ -28,3 +28,27 @@ div {
   top: 10cm;
   left: 20px;
 }
+
+#sol-1 {
+  position: absolute;
+  top: 10cm;
+  left: 18%;
+}
+
+#sol-2 {
+  position: absolute;
+  top: 10cm;
+  left: 34%;
+}
+
+#sol-3 {
+  position: absolute;
+  top: 10cm;
+  right: 18%;
+}
+
+#sol-4 {
+  position: absolute;
+  top: 10cm;
+  right: 20px;
+}
