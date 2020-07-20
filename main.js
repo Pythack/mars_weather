@@ -33,20 +33,19 @@ function format() {
 function infos_get(url, callback) {
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
-if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    //alert('responseText: ' + xmlhttp.responseText);
     try {
-        var data_info = JSON.parse(xmlhttp.responseText);
+        var data_infos = JSON.parse(xmlhttp.responseText);
+        //var headers = xmlhttp.getAllResponseHeaders().toLowerCase();
+        //alert(headers['X-Rate-Limit-Remaining']);
     } catch(err) {
         console.warn(err.message + " in " + xmlhttp.responseText);
         return;
     }
-    callback(data_info);
+    callback(data_infos);
 }
 };
-
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-}
 
 infos_get('https://api.nasa.gov/insight_weather/?api_key=UWtB23fwdeREqFp4mpbpd7quIuO8KXzRvaeclwRT&feedtype=json&ver=1.0', function(data) {
     console.log(data);
