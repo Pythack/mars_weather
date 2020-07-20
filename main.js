@@ -58,6 +58,8 @@ infos_get('https://api.nasa.gov/insight_weather/?api_key=UWtB23fwdeREqFp4mpbpd7q
     var actual_sol_AT = actual_sol['AT'];
     var max_temp = actual_sol_AT['mx'];
     var min_temp = actual_sol_AT['mn'];
+    localStorage.setItem('max_temp', max_temp);
+    localStorage.setItem('min_temp', min_temp);
     document.getElementById('max').innerHTML = "Maximum temperature : " + max_temp + "°C";
     document.getElementById('min').innerHTML = "Minimum temperature : " + min_temp + "°C";
     var actual_sol = Object.keys(data)[1];
@@ -93,3 +95,15 @@ infos_get('https://api.nasa.gov/insight_weather/?api_key=UWtB23fwdeREqFp4mpbpd7q
     document.getElementById('max-4').innerHTML = "Maximum temperature : " + max_temp + "°C";
     document.getElementById('min-4').innerHTML = "Minimum temperature : " + min_temp + "°C";
   });
+
+/*function generate_image() {
+  var canvas = document.getElementById("myCanvas");
+  var context = canvas.getContext("2d");
+     var imageObj = new Image();
+     imageObj.onload = function(){
+         context.drawImage(imageObj, 10, 10);
+         context.font = "40px Calibri";
+         context.fillText(localStorage.max_temp, 50, 50);
+     };
+      imageObj.src = "images/insight.png";
+}*/
