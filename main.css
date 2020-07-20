@@ -17,10 +17,10 @@ div {
   border-radius: 10px;
   background-color: black;
   opacity: 50%;
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 15%;
   color: white;
-  font-size: 10;
+  font-size: 20;
   padding-top: 3px;
   text-align: center;
 }
