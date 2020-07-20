@@ -10,7 +10,6 @@ body {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    max-zoom: 1;
 }
 
 div {
