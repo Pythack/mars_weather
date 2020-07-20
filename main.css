@@ -19,7 +19,8 @@ div {
   width: 10%;
   height: 10%;
   color: white;
-  padding-top: 17px;
+  font-size: auto;
+  padding-top: 10px;
   text-align: center;
 }
 
