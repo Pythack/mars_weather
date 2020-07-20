@@ -47,6 +47,10 @@ if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 }
 };
 
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+}
+
 infos_get('https://api.nasa.gov/insight_weather/?api_key=UWtB23fwdeREqFp4mpbpd7quIuO8KXzRvaeclwRT&feedtype=json&ver=1.0', function(data) {
     console.log(data);
   });
