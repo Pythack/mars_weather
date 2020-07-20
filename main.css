@@ -1,8 +1,9 @@
 body {
-  background-image: url('images/bg.png');
+  background-color: white;
+  /*background-image: url('images/bg.png');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size: cover;*/
   -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
