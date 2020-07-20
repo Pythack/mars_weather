@@ -29,4 +29,26 @@ function format() {
   }
 }
 
-https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0
+
+function infos_get(url, callback) {
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+    try {
+        var data_iss = JSON.parse(xmlhttp.responseText);
+    } catch(err) {
+        console.warn(err.message + " in " + xmlhttp.responseText);
+        return;
+    }
+    callback(data_info);
+}
+};
+
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+}
+
+infos_get('https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0', function(data, response) {
+    console.log(data);
+
+  });
