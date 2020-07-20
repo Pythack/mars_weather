@@ -22,3 +22,9 @@ div {
   padding-top: 20px;
   padding-left: 20px;
 }
+
+#sol {
+  position: absolute;
+  top: 10cm;
+  left: 20px;
+}
