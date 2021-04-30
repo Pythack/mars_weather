@@ -28,6 +28,5 @@ div {
 #boxes {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   flex-direction: row;
 }
