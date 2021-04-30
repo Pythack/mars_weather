@@ -5,5 +5,7 @@ This project allows you to know the actual weather on mars for the past 5 sols. 
 # Features to be added
 * Mars pressure
 * Season info
+  * Northern region
+  * Southern region
 # Sources
 NASA Insight API ([more info](https://api.nasa.gov/#insight))
