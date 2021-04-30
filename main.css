@@ -30,6 +30,7 @@ div[class="infos_box"] {
 #boxes {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   flex-direction: row;
   width: 100%;
   height: 100%;
